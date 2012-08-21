@@ -5,7 +5,7 @@
 	<title>Part of Image Slideshow</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/zepto.js"></script>
 	<script type="text/javascript" src="script/partofImg.js"></script>
 </head>
 <body>
@@ -20,8 +20,9 @@
 						$img_type=explode('.',$each_img);
 						$end_type=strtolower(end($img_type));
 						if($end_type=='jpg'){
-							echo 
-								"<div style=\"background-image:url('$path/$each_img');\"></div>";
+							echo "<div style=\"background-image:url('$path/$each_img');\">
+								<span></span>
+							</div>";
 						}
 					}
 				 ?>
