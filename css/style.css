@@ -27,8 +27,7 @@ div.partSl{
 	overflow: hidden;
 	cursor: pointer;
 	background: url('../images/loading.gif') no-repeat center center;
-	outline:1px solid black;
-
+	
 }
 div.partSl div.imgSl{
 	width: 1400px;
@@ -40,7 +39,14 @@ div.partSl div.imgSl > div{
 	height: inherit;
 	background-repeat: no-repeat;
 	background-position: left top; 
-}/*
+}
+div.partSl div.imgSl > div > span{
+	width: inherit;
+	height: inherit;
+	float: left;
+	background-color: rgba(0,0,0,0.4);
+}
+/*
 div.partSl div.imgSl span{
 	position: absolute;
 	left: 0;
@@ -63,3 +69,4 @@ div.partSl div.imgSl span{
 	-ms-transform:translateY(300px) rotate(-90deg);
 }
 
+*/
