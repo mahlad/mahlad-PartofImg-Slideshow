@@ -1,4 +1,8 @@
-$(function () {
+$(function(){
+	$('div.partSl div.imgSl div').css('width',Math.ceil(800/6)+'px');
+	
+});
+/*$(function () {
 	var slideshow=$("div.partSl"),
 		listImg=$("div.partSl div.imgSl div"),
 		totalImg=$("div.partSl div.imgSl div").length;
@@ -29,4 +33,4 @@ $(function () {
 	});
 	
 	
-});
+});*/
