@@ -13,17 +13,15 @@
 		<div class="partSl">
 			<div class="imgSl">
 				<?php 
-					$path='images';
+					$path='./images';
 					$img_arr=scandir($path);
-					$all_type='jpg,png,gif,jpeg';
-					$all_type=explode(',',$all_type);
+					
 					foreach ($img_arr as $each_img) {
 						$img_type=explode('.',$each_img);
 						$end_type=strtolower(end($img_type));
-						if(in_array($end_type , $all_type)){
-							echo "
-								<div style=\"background-image:url($path/$each_img)\">
-								</div>";
+						if($end_type=='jpg'){
+							echo 
+								"<div style=\"background-image:url('$path/$each_img');\"></div>";
 						}
 					}
 				 ?>
