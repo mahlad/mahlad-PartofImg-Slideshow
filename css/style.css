@@ -26,7 +26,8 @@ div.partSl{
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
-	background: url('images/loading.gif') no-repeat center center;
+	background: url('../images/loading.gif') no-repeat center center;
+	outline:1px solid black;
 
 }
 div.partSl div.imgSl{
