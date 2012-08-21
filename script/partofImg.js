@@ -1,6 +1,18 @@
 $(function(){
-	$('div.partSl div.imgSl div').css('width',Math.ceil(800/6)+'px');
-	
+	var partWIdth=Math.ceil(800/6);
+	partSl=$('div.partSl div.imgSl > div');
+	partSl.css({width:partWIdth+'px'});
+	partSl.last().css({'padding-right':'400px'});
+	partSl.mouseover(function(){
+		partSl.css({width:'60px'});
+		$(this).css({width:'500px'});
+	});
+
+	$('div.partSl').mouseout(function(){
+		partSl.css({width:partWIdth+'px'});
+	});
+
+
 });
 /*$(function () {
 	var slideshow=$("div.partSl"),
