@@ -7,8 +7,18 @@
  */
 /*Global
  ..............................*/
+ *{
+	padding: 0;
+	margin: 0;
+}
+div.container{
+	width: 950px;
+	margin: 0 auto;
+	padding-top: 1px;
+}
 /*Part of Image Slideshow
 ...............................*/
+
 div.partSl{
 	width: 800px;
 	height: 300px;
@@ -16,22 +26,20 @@ div.partSl{
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
+	background: url('images/loading.gif') no-repeat center center;
 
 }
 div.partSl div.imgSl{
-	position: absolute;
 	width: 1400px;
-	height: 300px;
+	height: inherit;
 }
 
 div.partSl div.imgSl > div{
-	position: absolute;
-	left: 0;
-	width: 500px;
-	height: 300px;
-
-
-}
+	float: left;
+	height: inherit;
+	background-repeat: no-repeat;
+	background-position: left top; 
+}/*
 div.partSl div.imgSl span{
 	position: absolute;
 	left: 0;
